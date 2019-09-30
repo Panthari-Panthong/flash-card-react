@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import FlashCard from './components/FlashCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>FlashCard Game</h1>
+      <FlashCard question="Highest point of a wave" answer="Crest" />
+      <FlashCard question="Lowest point of a wave" answer="Trough" />
+      <FlashCard question="Greatness of size; fullness; breadth of range" answer="Amplitude" />
+      <FlashCard question="Horizontal distance between the crests or between the troughs of two adjacent waves" answer="Wavelength" />
+      <FlashCard question="The number of complete wavelengths that pass a point in a given time" answer="Doppler Effect" />
+
     </div>
   );
 }
